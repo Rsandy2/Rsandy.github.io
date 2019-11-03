@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>All For One</title>
+    <link rel="stylesheet" href="/CSS/scroll-css.css" />
+    <link rel="stylesheet" href="/CSS/div-elements.css" />
+    <link rel="stylesheet" href="/CSS/section-css.css" />
+    <link rel="stylesheet" href="/CSS/section-home.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/style2.css" />
+    <link rel="stylesheet" href="/CSS/snack-bars.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+
+    <script src="/Javascript/clickhandle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="/Javascript/scroll-script.js"></script>
+    <script src="/Javascript/quote-script.js"></script>
+
+    <script src="/Javascript/time-js.js"></script>
+    <script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
+  </head>
+
+  <body>
+    <ul class="cb-slideshow">
+      <li>
+        <span>Image 01</span>
+        <div><h3></h3></div>
+      </li>
+      <li>
+        <span>Image 02</span>
+        <div><h3></h3></div>
+      </li>
+      <li>
+        <span>Image 03</span>
+        <div><h3></h3></div>
+      </li>
+      <li>
+        <span>Image 04</span>
+        <div><h3></h3></div>
+      </li>
+      <li>
+        <span>Image 05</span>
+        <div><h3></h3></div>
+      </li>
+      <li>
+        <span>Image 06</span>
+        <div><h3></h3></div>
+      </li>
+    </ul>
+
+    <div id="container" onscroll="myFunction()">
+      <header>
+        <div class="tempLogo">
+          <li>
+            <a href="newhome.html"> 100 Acts Of Kindness </a>
+          </li>
+        </div>
+        <div class="navbar">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#music">Music</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+        </div>
+        <div class="scroll-line"></div>
+      </header>
+
+      <!-- 
+           <div class="tempLogo">
+                  
+          </div> -->
+      <!-- <div class="navbar">
+              <ul>
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#news">News & Schedule</a></li>
+                  <li><a href="#gallery">Gallery</a></li>
+                  <li><a href="#about">About</a></li>
+              </ul>
+              
+          </div> -->
+
+      <!-- Sections -->
+
+      <section id="home">
+        <body onload="startTime(); startDate()">
+          <div id="date"></div>
+          <div id="display"></div>
+        </body>
+
+        <!-- <p id="demo"></p> -->
+        <div>
+          <p>This is the number of days till X-MAS</p>
+          <p id="demo2"></p>
+        </div>
+        <div class = "button-set">
+          <button id="buttonStyle" onclick="loadSnack()">• Guess What •</button>
+          <div id="snackbar">"You Are Loved"</div>
+
+          <button id="buttonStyle2" onclick="genQuote()">+ New Quote +</button>
+          <div id="snackbar2"> <p id="quote">"The people who are crazy enough to think they can change the world are the ones who do." <br/>- Steve Jobs</p></div>
+
+          <!-- <button id="buttonStyle2" onclick="loadSnack2()">• Guess What •</button>
+              <div id="snackbar">"You're Loved"</div> -->
+        </div>
+      </section>
+      <section id="music">
+        <div class="news">
+          <h1>Music</h1>
+          <div class="line"></div>
+          <div class="spotify">
+            <p>Some relaxing music for your day</p>
+            <iframe
+              src="https://open.spotify.com/embed/artist/0HCkZtmMJLvUyWT5m0ojBX"
+              width="300"
+              height="380"
+              frameborder="0"
+              allowtransparency="true"
+              allow="encrypted-media"
+            ></iframe>
+            <!-- <iframe id="spotify" src="https://open.spotify.com/embed/track/5TgS4dcUAU8EEb506d8wAT" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> -->
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery">
+        <h1>Gallery</h1>
+        <p>Enjoy</p>
+      </section>
+
+      <section id="about">
+        <h1>About</h1>
+        <p>
+          This was a small little Web-Page dedicated to spreading a little
+          positivity.
+        </p>
+      </section>
+
+      <!-- <div class="bottomnav">
+                  <div class="counter">01</div>
+                  
+                 
+                   <ul> 
+                      
+                        <li><a href="#home" class="icon ion-md-home"></a></li>
+                        <li><a href="#news" class="icon ion-md-paper"></a></li>
+                        <li><a href="#gallery" class="icon ion-md-images"></a></li>
+                        <li><ion-icon name="arrow-down"></ion-icon></li>
+                        <li><ion-icon name="arrow-up"></ion-icon></li>
+                  </ul> -->
+      <!-- </div> -->
+    </div>
+  </body>
+</html>

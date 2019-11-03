@@ -1,0 +1,70 @@
+:root {
+  /* (...) */
+  --light: 85;
+  --border-threshold: 80;
+}
+
+#display {
+  /* sets the border-color as a 30% darker shade of the same color*/
+  --border-light: calc(var(50) * 0.7%);
+  --border-alpha: calc((var(-0) - var(--border-threshold)) * 10);
+  
+  border: .1em solid hsla(var(50), calc(var(50) * 1%), var(--border-light), var(--border-alpha));
+}
+
+
+
+#demo2 {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 800;
+
+    background: -webkit-linear-gradient(right, rgb(228, 22, 22) ,rgb(66, 228, 139) 98%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+   
+}
+
+#display {
+	color: rgb(63, 108, 204);
+	font-size: 2.9em;
+	top: 10px;
+  border-bottom: thin solid;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+  opacity: 0.90;
+  text-shadow: 0 0.01sem 0.04em rgba(133, 133, 133, 0.35);
+
+}
+
+#date {
+  color: rgb(63, 108, 204);
+  font-size: 1.3em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: normal;
+  letter-spacing: 0.2em;
+  opacity: 0.8;
+  text-shadow:5 0.02em 0.9em rgba(230, 230, 230, 0.712);
+
+  
+}
+
+.spotify{
+    
+    position: absolute;
+    left: 42%;
+    padding: 11px;
+}
+
+
+#test {
+  background-color: #422DAD; 
+  color: rgb(58, 84, 97);
+	font-size: 2.9em;
+	top: 10px;
+  border-bottom: thin solid;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+  opacity: 0.80;
+  text-shadow: 0 0.01sem 0.04em rgba(133, 133, 133, 0.35);  
+ }

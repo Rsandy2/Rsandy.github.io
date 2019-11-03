@@ -1,0 +1,19 @@
+
+
+.news h1{
+text-align: right;
+}
+.news p{
+    margin-top: 20px;
+    text-align: left;
+}
+.line{
+    
+    height: 2px;
+    background: #fff;
+    float: right;
+    width: 50%;
+    z-index: 1;
+   
+
+}
